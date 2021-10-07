@@ -1,16 +1,19 @@
-package pl.edu.pw.elka.gatekeeper.db.dto.door;
+package com.siarkowski.gatekeeper.server.commons.station.gateway.request;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import pl.edu.pw.elka.gatekeeper.db.dto.station.DoorType;
+import com.siarkowski.gatekeeper.server.commons.station.gateway.GatewayType;
+import lombok.Builder;
+import lombok.Getter;
 
-@AllArgsConstructor
-@NoArgsConstructor
-@Data
-public class TenantRequest {
+import javax.validation.constraints.NotBlank;
 
-    private int houseNumber;
-    private DoorType door;
+@Builder
+@Getter
+public class GatewayTenantRequest {
+
+    private final int houseNumber;
+
+    private final GatewayType gateway;
+
+    @NotBlank
     private String outsideStationId;
 }

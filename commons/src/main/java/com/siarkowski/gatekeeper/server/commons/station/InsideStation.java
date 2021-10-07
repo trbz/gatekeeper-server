@@ -1,14 +1,12 @@
-package com.siarkowski.gatekeeper.server.commons.dto.station;
+package com.siarkowski.gatekeeper.server.commons.station;
 
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-@Builder
-@Getter
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
+@Getter
 public class InsideStation {
 
     private String stationId;

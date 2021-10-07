@@ -1,4 +1,4 @@
-package com.siarkowski.gatekeeper.server;
+package com.siarkowski.gatekeeper.server.backend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

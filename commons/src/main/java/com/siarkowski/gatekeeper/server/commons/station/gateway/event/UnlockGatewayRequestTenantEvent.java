@@ -1,14 +1,14 @@
-package pl.edu.pw.elka.gatekeeper.db.dto.event;
+package com.siarkowski.gatekeeper.server.commons.station.gateway.event;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import pl.edu.pw.elka.gatekeeper.db.dto.station.DoorType;
+import com.siarkowski.gatekeeper.server.commons.station.gateway.GatewayType;
+import lombok.Builder;
+import lombok.Getter;
 
-@Data
-@AllArgsConstructor
-public class UnlockDoorTenantRequestEvent {
+@Builder
+@Getter
+public class UnlockGatewayRequestTenantEvent {
 
     private final String outsideStationId;
     private final String tenantStationId;
-    private final DoorType door;
+    private final GatewayType gateway;
 }

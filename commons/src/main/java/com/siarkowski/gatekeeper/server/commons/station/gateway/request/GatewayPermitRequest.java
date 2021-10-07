@@ -1,17 +1,21 @@
-package pl.edu.pw.elka.gatekeeper.db.dto.station;
+package com.siarkowski.gatekeeper.server.commons.station.gateway.request;
 
 
-import lombok.AllArgsConstructor;
+import com.siarkowski.gatekeeper.server.commons.station.gateway.GatewayType;
+import lombok.Builder;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 
-@AllArgsConstructor
-@NoArgsConstructor
+import javax.validation.constraints.NotBlank;
+
+@Builder
 @Getter
-public class GuestRequest {
+public class GatewayPermitRequest {
 
-    private String guestId;
+    @NotBlank
+    private final String guestId;
 
-    private DoorType door;
-    private String outsideStationId;
+    private final GatewayType gateway;
+
+    @NotBlank
+    private final String outsideStationId;
 }

@@ -1,4 +1,4 @@
-package pl.edu.pw.elka.gatekeeper.db.dto.event;
+package com.siarkowski.gatekeeper.server.commons.station.gateway.event;
 
 
 public enum ServerEvent {

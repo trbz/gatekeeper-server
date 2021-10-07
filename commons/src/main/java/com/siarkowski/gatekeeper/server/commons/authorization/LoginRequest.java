@@ -1,4 +1,4 @@
-package com.siarkowski.gatekeeper.server.commons.dto.authorization;
+package com.siarkowski.gatekeeper.server.commons.authorization;
 
 import lombok.Builder;
 import lombok.Getter;
