@@ -4,21 +4,21 @@
 	<modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
 
-    <modules>
-        <module>commons</module>
-		<module>client</module>
-		<module>backend</module>
-	</modules>
-
-    <parent>
+	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.5.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>com.siarkowski</groupId>
-	<artifactId>gatekeeper-server</artifactId>
+    <modules>
+        <module>commons</module>
+		<module>client</module>
+		<module>backend</module>
+	</modules>
+
+	<groupId>gatekeeper-server</groupId>
+	<artifactId>parent</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>gatekeeper-server</name>
 	<description>Server for intercom system</description>
